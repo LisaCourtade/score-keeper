@@ -1,10 +1,10 @@
-const player1= {
+const player1 = {
     display: document.querySelector('#p1display'),
     button: document.querySelector('#p1button'),
     score: 0
 }
 
-const player2= {
+const player2 = {
     display: document.querySelector('#p2display'),
     button: document.querySelector('#p2button'),
     score: 0
@@ -19,7 +19,7 @@ let winningScore = parseInt(playtoSelect.value);
 
 function keepScore(player, oponent) {
     if (!isGameover) {
-        player.score = player.score +1;
+        player.score = player.score + 1;
         if (player.score == winningScore) {
             isGameover = true;
             player.display.classList.add('text-success');
